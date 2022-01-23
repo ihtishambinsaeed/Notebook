@@ -12,7 +12,7 @@ router.get('/fetchallnotes', fetchuser, async (req, res) => {
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
-    }
+        }
 })
 
 // ROUTE 2: Add a new Note using: POST "/api/notes/addnote". Login required
